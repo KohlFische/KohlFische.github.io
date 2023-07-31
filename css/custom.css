@@ -89,3 +89,7 @@
 #aside-content #card-toc .toc-content .toc-link.active{
     border-radius: 8px;
 }
+
+#pagination.pagination-post{
+    border-radius: 8px;
+}
