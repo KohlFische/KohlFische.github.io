@@ -33,6 +33,7 @@
 .avatar-img {
     animation: huxi 4s ease-in-out infinite;
 }
+
 @keyframes huxi {
     0% {
       box-shadow: 0px 0px 1px 1px #39c5bb;
@@ -60,23 +61,31 @@
     display: none;
 }
 
-.nav-fixed #nav{
-    transform: translateY(58px)!important;
-    -webkit-transform: translateY(58px)!important;
-    -moz-transform: translateY(58px)!important;
-    -ms-transform: translateY(58px)!important;
-    -o-transform: translateY(58px)!important;
-}
-
-#nav{
-    transition: none!important;
-    -webkit-transition: none!important;
-    -moz-transition: none!important;
-    -ms-transition: none!important;
-    -o-transition: none!important;
-}
-
-a{
+[data-theme="light"] #article-container a{
     text-decoration: none!important;
-    color:#1f2d3d!important;
+    color: #1f2d3d;
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+[data-theme="dark"] #article-container a{
+    text-decoration: none!important;
+    color:rgba(255,255,255,0.9);
+    -webkit-transition: all 0.2s;
+    -moz-transition: all 0.2s;
+    -o-transition: all 0.2s;
+    -ms-transition: all 0.2s;
+    transition: all 0.2s;
+}
+
+#article-container a:hover{
+    color:#49b1f5;
+    padding-left: 5px;
+}
+
+#aside-content #card-toc .toc-content .toc-link.active{
+    border-radius: 8px;
 }
