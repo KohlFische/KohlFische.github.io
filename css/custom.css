@@ -93,3 +93,7 @@
 #pagination.pagination-post{
     border-radius: 8px;
 }
+
+mjx-container{
+    overflow-x: hidden;
+}
